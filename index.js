@@ -20,8 +20,7 @@ app.get('/players/:id', db.getWalletById)
 app.post('/players', db.createWallet)
 app.post('/deposit/:id', db.depositFunds)
 app.post('/withdraw/:id', db.withdrawFunds)
-/*app.delete('/players/:id', db.deleteUser)
-*/
+
 app.listen(port, () => {
   console.log('App running on port ${port}.')
 })
